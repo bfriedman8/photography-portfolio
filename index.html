@@ -43,10 +43,13 @@
   </script>
   <style>
   .masonry {
-    vertical-align: top;
+    line-height: 0; /* removes inline spacing */
   }
   .masonry img {
-    vertical-align: top;
+    display: block; /* ensures perfect top alignment */
+    margin: 0;
+    padding: 0;
+    border-radius: 0; /* optional: only if you want no rounding */
   }
 </style>
 </head>
