@@ -109,127 +109,225 @@
     </nav>
   </header>
   <!-- Content -->
-  <div class="container mx-auto">
-    <h1 class="text-4xl pt-10 pb-8 font-bold">PORTFOLIO</h1>
-    <section class="text-neutral-700">
-  <div class="container w-full">
+  <div class="container mx-auto" x-data="{ tab: 'home' }">
+    <h1 class="text-4xl pt-10 pb-4 font-bold">PORTFOLIO</h1>
 
-    <!-- Masonry Grid -->
-    <div class="masonry columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 [column-fill:_balance]">
+    <!-- Tabs -->
+    <div class="flex flex-wrap gap-3 pb-8">
+      <button
+        @click="tab = 'home'"
+        :class="tab === 'home' ? 'bg-black text-white dark:bg-white dark:text-black' : 'bg-transparent text-black dark:text-white border border-black dark:border-white'"
+        class="font-signika text-lg px-4 py-2 transition duration-300">
+        HOME
+      </button>
 
-      <!-- alex_ethan -->
-      <a href="dist/assets/photos/alex_ethan.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/alex_ethan.JPG" class="w-full mb-2">
-      </a>
+      <button
+        @click="tab = 'nature'"
+        :class="tab === 'nature' ? 'bg-black text-white dark:bg-white dark:text-black' : 'bg-transparent text-black dark:text-white border border-black dark:border-white'"
+        class="font-signika text-lg px-4 py-2 transition duration-300">
+        NATURE
+      </button>
 
-      <!-- brixton -->
-      <a href="dist/assets/photos/brixton.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/brixton.JPG" class="w-full mb-2">
-      </a>
+      <button
+        @click="tab = 'cityscape'"
+        :class="tab === 'cityscape' ? 'bg-black text-white dark:bg-white dark:text-black' : 'bg-transparent text-black dark:text-white border border-black dark:border-white'"
+        class="font-signika text-lg px-4 py-2 transition duration-300">
+        CITYSCAPE
+      </button>
 
-      <!-- river -->
-      <a href="dist/assets/photos/river.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/river.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- brooklyn2 -->
-      <a href="dist/assets/photos/brooklyn.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/brooklyn2.jpeg" class="w-full mb-2">
-      </a>
-
-      <!-- window -->
-      <a href="dist/assets/photos/window.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/window.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- jesus -->
-      <a href="dist/assets/photos/jesus.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/jesus.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- laguna -->
-      <a href="dist/assets/photos/laguna.jpeg" data-fancybox="gallery">
-        <img src="dist/assets/photos/laguna.jpeg" class="w-full mb-2">
-      </a>
-
-      <!-- music -->
-      <a href="dist/assets/photos/music.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/music.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- london -->
-      <a href="dist/assets/photos/london.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/london.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- brooklyn -->
-      <a href="dist/assets/photos/brooklyn.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/brooklyn.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- met -->
-      <a href="dist/assets/photos/met.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/met.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- lisbon -->
-      <a href="dist/assets/photos/lisbon.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/lisbon.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- nycskyline -->
-      <a href="dist/assets/photos/nycskyline.jpeg" data-fancybox="gallery">
-        <img src="dist/assets/photos/nycskyline.jpeg" class="w-full mb-2">
-      </a>
-
-      <!-- pinkhouse -->
-      <a href="dist/assets/photos/pinkhouse.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/pinkhouse.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- arches -->
-      <a href="dist/assets/photos/arches.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/arches.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- redbus -->
-      <a href="dist/assets/photos/redbus.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/redbus.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- markie -->
-      <a href="dist/assets/photos/markie.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/markie.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- stainedglass -->
-      <a href="dist/assets/photos/stainedglass.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/stainedglass.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- restaurant -->
-      <a href="dist/assets/photos/restaurant.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/restaurant.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- vines -->
-      <a href="dist/assets/photos/vines.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/vines.JPG" class="w-full mb-2">
-      </a>
-
-      <!-- mountain clouds -->
-      <a href="dist/assets/photos/mountain_clouds.JPG" data-fancybox="gallery">
-        <img src="dist/assets/photos/mountain_clouds.JPG" class="w-full mb-2">
-      </a>
-
-      <!--
-      <a href="dist/assets/photos/closetower.jpg" data-fancybox="gallery">
-        <img src="dist/assets/photos/closetower.jpg" class="w-full mb-2">
-      </a>
-      -->
-
+      <button
+        @click="tab = 'portrait'"
+        :class="tab === 'portrait' ? 'bg-black text-white dark:bg-white dark:text-black' : 'bg-transparent text-black dark:text-white border border-black dark:border-white'"
+        class="font-signika text-lg px-4 py-2 transition duration-300">
+        PORTRAIT
+      </button>
     </div>
-  </div>
+
+    <section class="text-neutral-700">
+      <div class="container w-full">
+
+        <!-- HOME -->
+        <div x-show="tab === 'home'" class="masonry columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 [column-fill:_balance]">
+
+          <a href="dist/assets/photos/alex_ethan.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/alex_ethan.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/brixton.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/brixton.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/river.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/river.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/brooklyn.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/brooklyn2.jpeg" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/window.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/window.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/jesus.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/jesus.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/laguna.jpeg" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/laguna.jpeg" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/music.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/music.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/london.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/london.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/brooklyn.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/brooklyn.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/met.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/met.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/lisbon.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/lisbon.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/nycskyline.jpeg" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/nycskyline.jpeg" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/pinkhouse.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/pinkhouse.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/arches.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/arches.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/redbus.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/redbus.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/markie.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/markie.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/stainedglass.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/stainedglass.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/restaurant.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/restaurant.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/vines.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/vines.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/mountain_clouds.JPG" data-fancybox="home-gallery">
+            <img src="dist/assets/photos/mountain_clouds.JPG" class="w-full mb-2">
+          </a>
+        </div>
+
+        <!-- NATURE -->
+        <div x-show="tab === 'nature'" class="masonry columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 [column-fill:_balance]">
+          <a href="dist/assets/photos/river.JPG" data-fancybox="nature-gallery">
+            <img src="dist/assets/photos/river.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/laguna.jpeg" data-fancybox="nature-gallery">
+            <img src="dist/assets/photos/laguna.jpeg" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/arches.JPG" data-fancybox="nature-gallery">
+            <img src="dist/assets/photos/arches.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/vines.JPG" data-fancybox="nature-gallery">
+            <img src="dist/assets/photos/vines.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/mountain_clouds.JPG" data-fancybox="nature-gallery">
+            <img src="dist/assets/photos/mountain_clouds.JPG" class="w-full mb-2">
+          </a>
+        </div>
+
+        <!-- CITYSCAPE -->
+        <div x-show="tab === 'cityscape'" class="masonry columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 [column-fill:_balance]">
+          <a href="dist/assets/photos/brixton.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/brixton.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/brooklyn.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/brooklyn2.jpeg" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/window.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/window.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/london.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/london.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/brooklyn.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/brooklyn.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/met.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/met.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/lisbon.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/lisbon.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/nycskyline.jpeg" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/nycskyline.jpeg" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/pinkhouse.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/pinkhouse.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/redbus.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/redbus.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/stainedglass.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/stainedglass.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/restaurant.JPG" data-fancybox="city-gallery">
+            <img src="dist/assets/photos/restaurant.JPG" class="w-full mb-2">
+          </a>
+        </div>
+
+        <!-- PORTRAIT -->
+        <div x-show="tab === 'portrait'" class="masonry columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 [column-fill:_balance]">
+          <a href="dist/assets/photos/alex_ethan.JPG" data-fancybox="portrait-gallery">
+            <img src="dist/assets/photos/alex_ethan.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/jesus.JPG" data-fancybox="portrait-gallery">
+            <img src="dist/assets/photos/jesus.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/music.JPG" data-fancybox="portrait-gallery">
+            <img src="dist/assets/photos/music.JPG" class="w-full mb-2">
+          </a>
+
+          <a href="dist/assets/photos/markie.JPG" data-fancybox="portrait-gallery">
+            <img src="dist/assets/photos/markie.JPG" class="w-full mb-2">
+          </a>
+        </div>
+
+      </div>
     </section>
   </div>
   <!-- Footer -->
