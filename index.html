@@ -143,7 +143,7 @@
     <section class="text-neutral-700">
       <div class="container w-full">
 
-      <!-- HOME -->
+<!-- HOME -->
 <div x-show="tab === 'home'" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
 
   <a href="dist/assets/photos/alex_ethan.JPG" data-fancybox="home-gallery">
@@ -158,19 +158,13 @@
     <img src="dist/assets/photos/lisbon.JPG" class="w-full h-auto">
   </a>
 
-  <div class="grid grid-cols-3 gap-3 items-stretch">
-
-  <!-- ducks (natural height drives the row) -->
-  <a href="dist/assets/photos/ducks.jpg" data-fancybox="home-gallery" class="col-span-2">
+  <a href="dist/assets/photos/ducks.jpg" data-fancybox="home-gallery" class="lg:col-span-2">
     <img src="dist/assets/photos/ducks.jpg" class="w-full h-auto">
   </a>
 
-  <!-- butterfly vertical -->
-  <a href="dist/assets/photos/butterfly_vertical.jpg" data-fancybox="home-gallery" class="col-span-1 h-full overflow-hidden">
-    <img src="dist/assets/photos/butterfly_vertical.jpg" class="w-full h-full object-cover">
+  <a href="dist/assets/photos/butterfly_vertical.jpg" data-fancybox="home-gallery">
+    <img src="dist/assets/photos/butterfly_vertical.jpg" class="w-full h-auto">
   </a>
-
-</div>
 
   <a href="dist/assets/photos/london.JPG" data-fancybox="home-gallery">
     <img src="dist/assets/photos/london.JPG" class="w-full h-auto">
@@ -180,51 +174,33 @@
     <img src="dist/assets/photos/fire.jpg" class="w-full h-auto">
   </a>
 
-  <a href="dist/assets/photos/markie.JPG" data-fancybox="home-gallery">
+   <a href="dist/assets/photos/markie.JPG" data-fancybox="home-gallery">
     <img src="dist/assets/photos/markie.JPG" class="w-full h-auto">
   </a>
 
-  <div class="grid grid-cols-3 gap-3 items-stretch">
-
-  <!-- restaurtant (natural height drives the row) -->
-  <a href="dist/assets/photos/restaurant.JPG" data-fancybox="home-gallery" class="col-span-2">
+  <a href="dist/assets/photos/restaurant.JPG" data-fancybox="home-gallery" class="lg:col-span-2">
     <img src="dist/assets/photos/restaurant.JPG" class="w-full h-auto">
   </a>
 
-  <!-- mountain clouds -->
-  <a href="dist/assets/photos/mountain_clouds.JPG" data-fancybox="home-gallery" class="col-span-1 h-full overflow-hidden">
-    <img src="dist/assets/photos/mountain_clouds.JPG" class="w-full h-full object-cover">
+  <a href="dist/assets/photos/mountain_clouds.JPG" data-fancybox="home-gallery">
+    <img src="dist/assets/photos/mountain_clouds.JPG" class="w-full h-auto">
   </a>
 
-</div>
-
-  <div class="grid grid-cols-3 gap-3 items-stretch">
-
-  <!-- window (will stretch + crop) -->
-  <a href="dist/assets/photos/window.JPG" data-fancybox="home-gallery" class="col-span-1 h-full overflow-hidden">
-    <img src="dist/assets/photos/window.JPG" class="w-full h-full object-cover">
+  <a href="dist/assets/photos/window.JPG" data-fancybox="home-gallery">
+    <img src="dist/assets/photos/window.JPG" class="w-full h-auto">
   </a>
 
-  <!-- pink house (natural height drives the row) -->
-  <a href="dist/assets/photos/pinkhouse.JPG" data-fancybox="home-gallery" class="col-span-2">
+  <a href="dist/assets/photos/pinkhouse.JPG" data-fancybox="home-gallery" class="lg:col-span-2">
     <img src="dist/assets/photos/pinkhouse.JPG" class="w-full h-auto">
   </a>
 
-</div>
+  <a href="dist/assets/photos/redbus.JPG" data-fancybox="home-gallery">
+    <img src="dist/assets/photos/redbus.JPG" class="w-full h-auto">
+  </a>
 
-  <div class="grid grid-cols-3 gap-3 items-stretch">
-
-    <!-- stained glass (natural height drives the row) -->
-  <a href="dist/assets/photos/stainedglass.JPG" data-fancybox="home-gallery" class="col-span-2">
+  <a href="dist/assets/photos/stainedglass.JPG" data-fancybox="home-gallery" class="lg:col-span-2">
     <img src="dist/assets/photos/stainedglass.JPG" class="w-full h-auto">
   </a>
-
-  <!-- redbus (will stretch + crop) -->
-  <a href="dist/assets/photos/redbus.JPG" data-fancybox="home-gallery" class="col-span-1 h-full overflow-hidden">
-    <img src="dist/assets/photos/redbus.JPG" class="w-full h-full object-cover">
-  </a>
-
-</div>
 
   <a href="dist/assets/photos/brooklyn.JPG" data-fancybox="home-gallery">
     <img src="dist/assets/photos/brooklyn.JPG" class="w-full h-auto">
@@ -241,106 +217,110 @@
 </div>
 
         <!-- NATURE -->
-        <div x-show="tab === 'nature'" class="masonry columns-1 sm:columns-2 lg:columns-3 gap-3 [column-fill:_balance]">
-          <a href="dist/assets/photos/river.JPG" data-fancybox="nature-gallery">
-            <img src="dist/assets/photos/river.JPG" class="w-full mb-2">
-          </a>
+<div x-show="tab === 'nature'" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
 
-          <a href="dist/assets/photos/vines.JPG" data-fancybox="nature-gallery">
-            <img src="dist/assets/photos/butterfly_vertical.jpg" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/river.JPG" data-fancybox="nature-gallery">
+    <img src="dist/assets/photos/river.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/laguna.jpeg" data-fancybox="nature-gallery">
-            <img src="dist/assets/photos/laguna.jpeg" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/butterfly_vertical.jpg" data-fancybox="nature-gallery">
+    <img src="dist/assets/photos/butterfly_vertical.jpg" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/vines.JPG" data-fancybox="nature-gallery">
-            <img src="dist/assets/photos/flying_goose.jpg" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/laguna.jpeg" data-fancybox="nature-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/laguna.jpeg" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/vines.JPG" data-fancybox="nature-gallery">
-            <img src="dist/assets/photos/fire.jpg" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/flying_goose.jpg" data-fancybox="nature-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/flying_goose.jpg" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/vines.JPG" data-fancybox="nature-gallery">
-            <img src="dist/assets/photos/vines.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/fire.jpg" data-fancybox="nature-gallery">
+    <img src="dist/assets/photos/fire.jpg" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/vines.JPG" data-fancybox="nature-gallery">
-            <img src="dist/assets/photos/ducks.jpg" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/vines.JPG" data-fancybox="nature-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/vines.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/vines.JPG" data-fancybox="nature-gallery">
-            <img src="dist/assets/photos/butterfly_horizontal.jpg" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/ducks.jpg" data-fancybox="nature-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/ducks.jpg" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/mountain_clouds.JPG" data-fancybox="nature-gallery">
-            <img src="dist/assets/photos/mountain_clouds.JPG" class="w-full mb-2">
-          </a>
-        </div>
+  <a href="dist/assets/photos/butterfly_horizontal.jpg" data-fancybox="nature-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/butterfly_horizontal.jpg" class="w-full h-auto">
+  </a>
 
-        <!-- CITYSCAPE -->
-        <div x-show="tab === 'cityscape'" class="masonry columns-1 sm:columns-2 lg:columns-3 gap-3 [column-fill:_balance]">
-          <a href="dist/assets/photos/brixton.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/brixton.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/mountain_clouds.JPG" data-fancybox="nature-gallery">
+    <img src="dist/assets/photos/mountain_clouds.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/arches.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/arches.JPG" class="w-full mb-2">
-          </a>
+</div>
 
-          <a href="dist/assets/photos/basketball.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/basketball.JPG" class="w-full mb-2">
-          </a>
+       <!-- CITYSCAPE -->
+<div x-show="tab === 'cityscape'" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
 
-          <a href="dist/assets/photos/window.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/window.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/brixton.JPG" data-fancybox="city-gallery">
+    <img src="dist/assets/photos/brixton.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/window.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/winter_runner.jpg" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/arches.JPG" data-fancybox="city-gallery">
+    <img src="dist/assets/photos/arches.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/london.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/london.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/basketball.JPG" data-fancybox="city-gallery">
+    <img src="dist/assets/photos/basketball.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/brooklyn.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/brooklyn.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/window.JPG" data-fancybox="city-gallery">
+    <img src="dist/assets/photos/window.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/lisbon.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/lisbon.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/winter_runner.jpg" data-fancybox="city-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/winter_runner.jpg" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/pinkhouse.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/pinkhouse.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/london.JPG" data-fancybox="city-gallery">
+    <img src="dist/assets/photos/london.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/arches.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/deli.jpg" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/brooklyn.JPG" data-fancybox="city-gallery">
+    <img src="dist/assets/photos/brooklyn.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/redbus.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/redbus.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/lisbon.JPG" data-fancybox="city-gallery">
+    <img src="dist/assets/photos/lisbon.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/jesus.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/jesus.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/pinkhouse.JPG" data-fancybox="city-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/pinkhouse.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/stainedglass.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/stainedglass.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/deli.jpg" data-fancybox="city-gallery">
+    <img src="dist/assets/photos/deli.jpg" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/music.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/music.JPG" class="w-full mb-2">
-          </a>
+  <a href="dist/assets/photos/redbus.JPG" data-fancybox="city-gallery">
+    <img src="dist/assets/photos/redbus.JPG" class="w-full h-auto">
+  </a>
 
-          <a href="dist/assets/photos/restaurant.JPG" data-fancybox="city-gallery">
-            <img src="dist/assets/photos/restaurant.JPG" class="w-full mb-2">
-          </a>
-        </div>
+  <a href="dist/assets/photos/jesus.JPG" data-fancybox="city-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/jesus.JPG" class="w-full h-auto">
+  </a>
+
+  <a href="dist/assets/photos/stainedglass.JPG" data-fancybox="city-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/stainedglass.JPG" class="w-full h-auto">
+  </a>
+
+  <a href="dist/assets/photos/music.JPG" data-fancybox="city-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/music.JPG" class="w-full h-auto">
+  </a>
+
+  <a href="dist/assets/photos/restaurant.JPG" data-fancybox="city-gallery" class="lg:col-span-2">
+    <img src="dist/assets/photos/restaurant.JPG" class="w-full h-auto">
+  </a>
+
+</div>
 
         <!-- PORTRAIT -->
         <div x-show="tab === 'portrait'" class="masonry columns-1 sm:columns-2 lg:columns-3 gap-3 [column-fill:_balance]">
